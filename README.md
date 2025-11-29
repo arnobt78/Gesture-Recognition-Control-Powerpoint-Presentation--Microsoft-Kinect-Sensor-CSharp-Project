@@ -185,7 +185,7 @@ The gestures send keyboard events to **any foreground application**:
 
 The application follows an **event-driven architecture** with real-time data processing:
 
-```mermaid
+```bash
 Kinect Sensor
     ↓
 [Color Stream] → Video Display (640x480@30fps)
@@ -748,7 +748,7 @@ JointType[] jointTypes = {
 
 **Algorithm Flow**:
 
-```mermaid
+```bash
 1. Receive skeleton frame (30 FPS)
 2. Identify closest tracked person
 3. Extract head, left hand, right hand joints
