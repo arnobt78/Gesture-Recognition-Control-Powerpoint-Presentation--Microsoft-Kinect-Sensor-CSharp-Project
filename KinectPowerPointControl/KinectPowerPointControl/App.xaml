@@ -1,0 +1,17 @@
+﻿<!-- 
+    App.xaml - Application-level XAML file that defines the WPF application entry point
+    
+    This file:
+    1. Sets the StartupUri to MainWindow.xaml (the main window that opens when app starts)
+    2. Can contain application-wide resources (styles, brushes, etc.) if needed
+    3. The code-behind (App.xaml.cs) handles application-level events
+-->
+<Application x:Class="KinectPowerPointControl.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <!-- Application.Resources - Can contain shared resources like styles, templates, etc. -->
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

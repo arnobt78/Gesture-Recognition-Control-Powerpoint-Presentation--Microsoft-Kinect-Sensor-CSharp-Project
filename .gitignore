@@ -1,0 +1,254 @@
+# ==============================================================================
+# .gitignore for Kinect PowerPoint Control - C# WPF Project
+# ==============================================================================
+
+# ==============================================================================
+# Visual Studio Build Outputs
+# ==============================================================================
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]uild/
+[Bb]uildLog/
+*.[Pp]ublish.xml
+*.publishproj
+
+# Visual Studio cache/options directory
+.vs/
+.vscode/
+
+# Compiled binaries
+*.exe
+*.dll
+*.pdb
+*.cache
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Visual Studio Trace Files
+*.e2e
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# ==============================================================================
+# Visual Studio User-Specific Files
+# ==============================================================================
+
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Visual Studio auto-generated files
+*.csproj.user
+*.vbproj.user
+*.vcxproj.user
+*.vcxproj.filters
+
+# ==============================================================================
+# XAML Build Artifacts
+# ==============================================================================
+
+# Compiled XAML (BAML files)
+*.baml
+
+# Generated code files
+*.g.cs
+*.g.i.cs
+*.g.resources
+
+# XAML cache files
+*_MarkupCompile.cache
+*_MarkupCompile.i.cache
+
+# ==============================================================================
+# Windows OS Files
+# ==============================================================================
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin
+$RECYCLE.BIN/
+
+# Windows shortcuts
+*.lnk
+
+# ==============================================================================
+# macOS Files
+# ==============================================================================
+
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ==============================================================================
+# Linux Files
+# ==============================================================================
+
+*~
+
+# ==============================================================================
+# NuGet Packages
+# ==============================================================================
+
+# NuGet Packages Directory
+packages/
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+
+# ==============================================================================
+# Backup and Archive Files
+# ==============================================================================
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+*.swp
+*~
+
+# Archive files (keep source, ignore backups)
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Project-specific: Ignore backup folder if it exists
+*.srcbin/
+*.srcbin.zip
+
+# ==============================================================================
+# IDE and Editor Files
+# ==============================================================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ==============================================================================
+# Test Results
+# ==============================================================================
+
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+*.coverage
+*.coveragexml
+
+# ==============================================================================
+# Temporary Files
+# ==============================================================================
+
+*.tmp
+*.temp
+*.log
+*.cache
+
+# ==============================================================================
+# Project-Specific Exclusions
+# ==============================================================================
+
+# Compiled executables (already covered above, but being explicit)
+KinectPowerPointControl.exe
+*.vshost.exe
+*.vshost.exe.manifest
+*.vshost.exe.config
+
+# Build artifacts
+*.FileListAbsolute.txt
+*.GenerateResource.Cache
+
+# ==============================================================================
+# Documentation Build Outputs (if any)
+# ==============================================================================
+
+# Uncomment if you generate documentation
+# doc/_build/
+# doc/_static/
+# doc/_templates/
+
+# ==============================================================================
+# End of .gitignore
+# ==============================================================================
+

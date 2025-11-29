@@ -1,0 +1,69 @@
+﻿<!-- 
+    MainWindow.xaml - Defines the user interface layout for the Kinect PowerPoint Control application
+    
+    This XAML file creates a window that displays:
+    1. Live video feed from the Kinect RGB camera
+    2. Three tracking circles (ellipses) that follow the user's head and hands
+    3. Visual feedback when gestures are detected (circles grow and turn green)
+-->
+<Window x:Class="KinectPowerPointControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Kinect PowerPoint Control"
+        Height="480"
+        Width="640"
+        WindowState="Maximized">
+    <!-- Viewbox ensures the content scales uniformly to fit the window -->
+    <Viewbox Stretch="Uniform">
+        <Grid>
+            <!-- 
+                Image control that displays the live video feed from the Kinect RGB camera
+                The source is set programmatically in MainWindow.xaml.cs from the color stream data
+                Resolution: 640x480 pixels at 30 frames per second
+            -->
+            <Image Name="videoImage"
+                   Width="640"
+                   Height="480"></Image>
+            <!-- 
+                Canvas overlay for positioning the tracking circles (ellipses)
+                Background is transparent so the video feed shows through
+                The ellipses are positioned dynamically based on skeleton tracking data
+            -->
+            <Canvas Background="Transparent">
+                <!-- 
+                    Left Hand Tracking Ellipse
+                    - Initially red and small (20x20 pixels)
+                    - Grows to 60x60 and turns green when back gesture is active
+                    - Position is updated in real-time to follow the left hand joint
+                -->
+                <Ellipse Fill="Red"
+                         Height="20"
+                         Width="20"
+                         Name="ellipseLeftHand"
+                         Stroke="White" />
+                <!-- 
+                    Right Hand Tracking Ellipse
+                    - Initially red and small (20x20 pixels)
+                    - Grows to 60x60 and turns green when forward gesture is active
+                    - Position is updated in real-time to follow the right hand joint
+                -->
+                <Ellipse Fill="Red"
+                         Height="20"
+                         Width="20"
+                         Name="ellipseRightHand"
+                         Stroke="White" />
+                <!-- 
+                    Head Tracking Ellipse
+                    - Always red and small (20x20 pixels)
+                    - Used as a reference point for gesture detection
+                    - Position is updated in real-time to follow the head joint
+                -->
+                <Ellipse Fill="Red"
+                         Height="20"
+                         Width="20"
+                         Name="ellipseHead"
+                         Stroke="White" />
+            </Canvas>
+        </Grid>
+    </Viewbox>
+</Window>
